@@ -22,6 +22,11 @@ solana batch transfer &lt;max size 50 accounts transfer>
       keypair_string = 'bs58 private key'
       receivers_list = ['receiver_01', 'receiver_01', ...]
       transfer_amount = 0.01
-      tx_hash = send_transaction(bs58_string=keypair_string, receivers=receivers_list, amount=transfer_amount)
+      tx_hash = send_transaction(bs58_string=keypair_string, receivers=receivers_list, amount=transfer_amount,endpoint="https://api.devnet.solana.com")
       print(tx_hash)
+  ```
+
+- ```
+  1. default amount: 0.01
+  2. default endpoint: https://api.devnet.solana.com
   ```
